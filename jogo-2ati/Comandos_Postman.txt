@@ -1,0 +1,49 @@
+------------POST-----------
+http://127.0.0.1:5000/Jogo
+---------------------------
+
+Body - raw - JSON
+
+{
+  "titulo": "Batman: Arkham Knight",
+  "genero": "Ação/Aventura",
+  "desenvolvedor": "Rocksteady Studios",
+  "plataforma": "PC, PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch"
+}
+
+{
+  "titulo": "Red Dead Redemption 2",
+  "genero": "Ação/Aventura",
+  "desenvolvedor": "Rockstar Games",
+  "plataforma": "PC, PS4, PS5, Xbox One, Xbox Series X/S"
+}
+
+{
+  "titulo": "EA Sports FC 26",
+  "genero": "Esporte",
+  "desenvolvedor": "EA Sports",
+  "plataforma": "PC, PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch"
+}
+
+{
+  "titulo": "God of War",
+  "genero": "Ação/Aventura",
+  "desenvolvedor": "Santa Monica Studio",
+  "plataforma": "PC, PS4, PS5, Xbox One, Xbox Series X/S"
+}
+
+{
+  "titulo": "Assassin's Creed Origins",
+  "genero": "Ação/RPG",
+  "desenvolvedor": "Ubisoft",
+  "plataforma": "PC, PS4, PS5, Xbox One, Xbox Series X/S"
+}
+
+
+------------GET------------
+http://127.0.0.1:5000/Jogo
+---------------------------
+
+------------PUT------------
+http://127.0.0.1:5000/Jogo/1
+---------------------------
