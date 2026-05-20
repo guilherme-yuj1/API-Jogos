@@ -1,5 +1,5 @@
 from flask import Blueprint, request
-from controllers.jogo_controllers import get_jogos, create_jogo, update_jogo, get_jogo_by_id
+from controllers.jogo_controllers import get_jogos, create_jogo, update_jogo, get_jogo_by_id, delete_jogo
 
 jogo_routes = Blueprint('jogo_routes', __name__)
 
@@ -18,3 +18,7 @@ def jogos_post():
 @jogo_routes.route('/Jogo/<int:jogo_id>', methods=['PUT'])
 def jogos_put(jogo_id):
     return update_jogo(jogo_id, request.json)
+
+@jogo_routes.route('/Jogo/<int:jogo_id>', methods=['DELETE'])
+def jogos_delete(jogo_id):
+    return delete_jogo(jogo_id)
